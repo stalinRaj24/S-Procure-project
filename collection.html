@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Procure</title>
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .women_Section {
+            display: grid;
+            border: 2px solid aqua;
+            grid-template-columns: repeat(auto-fit, 300px);
+            gap: 20px;
+            justify-content: center;
+            transition: .5s;
+        }
+
+        .category__card {
+            text-decoration: none;
+            gap: 10px;
+        }
+
+        .category__card a h4 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .categories__head{
+              text-align: center;
+        }
+        .categories__head h1 {
+            color: #f61a0a;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        .categories__head h4{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width:900px) {
+            .women_Section {
+                grid-template-columns: repeat(auto-fit, 250px);
+
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .women_Section {
+                grid-template-columns: repeat(auto-fit, 200px);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <h1 class="logo">S-Procure</h1>
+
+        <div class="navbar__links">
+            <p class="navbar__link"><a href="index.html">Home</a></p>
+            <p class="navbar__link"><a href="#">About Us</a></p>
+            <p class="navbar__link"><a href="collection.html">Categories</a></p>
+            <p class="navbar__link"><a href="contact.html">Contact Us</a></p>
+            <button class="Signin">Sig in</button>
+        </div>
+
+        <div onclick="showsidebar()" class="navbar-menu-toggle">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Side Navbar -->
+
+        <div class="sidenavbar">
+            <i onclick="closebar()" id="" class="fa-solid fa-xmark"></i>
+            <p class="side-navbar_link"><a href="index.html">Home</a></p>
+            <p class="side-navbar_link"><a href="#">About Us</a></p>
+            <p class="side-navbar_link"><a href="collection.html">Categories</a></p>
+            <p class="side-navbar_link"><a href="contact.html">Contact Us</a></p>
+            <button class="Signin2">Sig in</button>
+        </div>
+
+    </nav>
+
+
+    <!-- Side Navbar -->
+
+    <div class="sidenavbar">
+        <i onclick="closebar()" id="" class="fa-solid fa-xmark"></i>
+        <p class="side-navbar_link"><a href="index.html">Home</a></p>
+        <p class="side-navbar_link"><a href="#">About Us</a></p>
+        <p class="side-navbar_link"><a href="collection.html">Categories</a></p>
+        <p class="side-navbar_link"><a href="contact.html">Contact Us</a></p>
+        <button class="Signin2">Sig in</button>
+    </div>
+
+
+    <!-- Categories Section-->
+
+    <div class="categories_main">
+
+        <div class="categories__head">
+            <h1>Categories</h1>
+            <h4>Pick  Your  <span>Right</span>  Choice</h4>
+        </div>
+
+        <div class="women_Section" style="text-align: center;">
+
+            <!-- <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5"></div> -->
+
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Women</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Girls</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Men</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Boys</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Baby</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Mobile Phones</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Gadjets</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Electronics</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+            
+            <div class="category__card" style=" border: 2px solid black; ">
+                <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%; height: 70%;">
+                <h4>Kitchen Appliances</h4>
+                <a href="women.html">
+                <button style="color:#f61a0a; font-size: 16px; font-size: 600; background: transparent; padding: 4px; border-radius: 6px; border: 1px solid #f61a0a; margin-top: 5px;">See More</button>
+                </a>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- footer Section -->
+    <div>
+        <div class="footer1">
+
+            <div class="footer1_logo">
+                <h1>Smart-Procure</h1>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisici <br> elit. Vitae, natus.</p>
+            </div>
+
+            <div class="footer1_ase">
+                <ul>
+                    <li>ARCHIACT</li>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>New Arrivals</li>
+                    <li>Collections</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li>SERVICES</li>
+                    <li>Games</li>
+                    <li>Publishings</li>
+                    <li>Solutions</li>
+                </ul>
+                <ul>
+                    <li>EVENT</li>
+                    <li>CVR</li>
+                    <li>Webinars</li>
+                </ul>
+            </div>
+
+            <div class="footer1_follow">
+                <h1>FOLLOW</h1>
+            </div>
+
+        </div>
+
+        <div class="footer2">
+            <div class="footer2_tp">
+                <h4>TERMS & CONDITIONS</h4>
+                <h4>PRIVACY & POLICY</h4>
+            </div>
+
+            <div class="footer2_sp">
+                <h3>Smart-Procure</h3>
+                <p> The Standard chunk of Lorem ipsum <br> used since the 1500s t</p>
+                <p>@ 2025 S-Procure.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Link Javascript File-->
+    <script src="script.js"></script>
+</body>
+
+</html>

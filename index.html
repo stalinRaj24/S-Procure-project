@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Procure</title>
+
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <h1 class="logo">S-Procure</h1>
+
+        <div class="navbar__links">
+            <p class="navbar__link"><a href="index.html">Home</a></p>
+            <p class="navbar__link"><a href="#">About Us</a></p>
+            <p class="navbar__link"><a href="collection.html">Categories</a></p>
+            <p class="navbar__link"><a href="contact.html">Contact Us</a></p>
+            <button class="Signin">Sig in</button>
+        </div>
+
+        <div onclick="showsidebar()" class="navbar-menu-toggle">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <!-- Side Navbar -->
+
+    <div class="sidenavbar">
+        <i onclick="closebar()" id="" class="fa-solid fa-xmark"></i>
+        <p class="side-navbar_link"><a href="index.html">Home</a></p>
+        <p class="side-navbar_link"><a href="#">About Us</a></p>
+        <p class="side-navbar_link"><a href="collection.html">Categories</a></p>
+        <p class="side-navbar_link"><a href="contact.html">Contact Us</a></p>
+        <button class="Signin2">Sig in</button>
+    </div>
+
+    <!-- Search Section -->
+    <div class="main">
+        <div class="hhh">
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 15px;color: #f61a0a;"></i>
+            <input type="text" placeholder="search..">
+        </div>
+        <div class="cart">
+            <p style="font-size: 18px;font-weight: 800;color: #f61a0a;">Cart</p>
+            <i class="fa-solid fa-cart-shopping" style="font-size: 20px; color: #f61a0a;"></i>
+
+        </div>
+        <div class="wish">
+            <p style="font-size: 18px;font-weight: 800;color: #f61a0a;">Wishlist</p>
+            <i class="fa-solid fa-list" style="font-size: 20px;color: #f61a0a;"></i>
+
+        </div>
+    </div>
+    <hr>
+
+    <!-- Slide Images -->
+
+    <div class="slider">
+        <figure>
+            <img src="./Images/Slide-img-1.png" alt="">
+            <img src="./Images/Slide-img-2.png" alt="">
+            <img src="./Images/Slide-img-3.png" alt="">
+            <img src="./Images/Slide-img-4.png" alt="">
+            <img src="./Images/Slide-img-1.png" alt="">
+        </figure>
+    </div>
+
+    <!-- Sliding Brands -->
+    <div class="sbrands">
+
+        <div class="sbrand__child">
+            <img src="./Brand_images/adidas.png" alt="#" style="width: 100%;height: 100%; ">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/apple.webp" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/crompton.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/dior.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/gucci.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/nike.jpeg" alt="" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/prada.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/puma.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/realme.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/samsung.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/v-guard.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/zudio.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/prada.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/shelton.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+        <div class="sbrand__child">
+            <img src="./Brand_images/levi's.jpeg" alt="#" style="width: 100%;height: 100%;">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- footer Section -->
+    <!-- <div>
+        <div class="footer1">
+
+            <div class="footer1_logo">
+                <h1>Smart-Procure</h1>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisici <br> elit. Vitae, natus.</p>
+            </div>
+
+            <div class="footer1_ase">
+                <ul>
+                    <li>ARCHIACT</li>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>New Arrivals</li>
+                    <li>Collections</li>
+                    <li>Contact</li>
+                </ul>
+                <ul>
+                    <li>SERVICES</li>
+                    <li>Games</li>
+                    <li>Publishings</li>
+                    <li>Solutions</li>
+                </ul>
+                <ul>
+                    <li>EVENT</li>
+                    <li>CVR</li>
+                    <li>Webinars</li>
+                </ul>
+            </div>
+
+            <div class="footer1_follow">
+                <h1>FOLLOW</h1>
+            </div>
+
+        </div>
+
+
+
+        <div class="footer2">
+            <div class="footer2_tp">
+                <h4>TERMS & CONDITIONS</h4>
+                <h4>PRIVACY & POLICY</h4>
+            </div>
+
+            <div class="footer2_sp">
+                <h3>Smart-Procure</h3>
+                <p> The Standard chunk of Lorem ipsum <br> used since the 1500s t</p>
+                <p>@ 2025 S-Procure.com</p>
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <!--Link Javascript File-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
